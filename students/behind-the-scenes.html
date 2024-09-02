@@ -17,7 +17,7 @@
     <title>CSS for Ben Schembri's profile</title>
     <link
       rel="stylesheet"
-      href="styles.css"
+      href="../styles.css"
     />
     <link
       rel="stylesheet"
@@ -29,7 +29,7 @@
     ></script>
     <link
       rel="icon"
-      href="favicon.ico"
+      href="../favicon.ico"
       type="image/x-icon"
     />
     <style>
@@ -116,6 +116,7 @@
       >
       package to give it syntax highlighting.
     </p>
+    <p>Here is the CSS used to style my <span class="codeblock">index.html</span> file:</p>
     <pre><code class="language-css"></code></pre>
     <script>
       // Select the element to insert the CSS into.
@@ -124,7 +125,7 @@
       // Function that fetches and displays the content of my CSS file.
       async function loadCSSFile() {
         try {
-          const response = await fetch("./styles.css");
+          const response = await fetch("../styles.css");
           if (response.ok) {
             const cssContent = await response.text();
             code.textContent = cssContent;
