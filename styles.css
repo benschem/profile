@@ -228,7 +228,6 @@ section:nth-of-type(even) {
   border-radius: 50%;
   background-color: var(--color-medium);
   padding: 1rem;
-  font-size: var(--font-size-fluid-3);
 }
 
 figcaption {
