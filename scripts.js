@@ -75,18 +75,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   };
 
   // As soon as you scroll, hide the bouncing arrow encouraging you to scroll down.
-  window.addEventListener("scroll", () => {
-    if (pageIsScrolledAllTheWayUp()) {
-      showArrow();
-    } else {
-      hideArrow();
-    }
-  });
-
-  const pageIsScrolledAllTheWayUp = () => {
-    return window.scrollY === 0;
-  };
-
+  // Prevent the bouncing arrow touching the buttons if the screen height is too small.
+  const buttons = document.querySelector(".buttons");
   const downArrow = document.querySelector("#down-arrow");
 
   const showArrow = () => {
@@ -96,4 +86,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const hideArrow = () => {
     downArrow.style.display = "none";
   };
+
+  const toggleArrowVisibility = () => {
+    const downArrowRect = downArrow.getBoundingClientRect();
+    const buttonsRect = buttons.getBoundingClientRect();
+
+    const scrolledAllTheWayUp = window.scrollY === 0;
+
+    const arrowOverlapsButtons =
+      downArrowRect.bottom > buttonsRect.top &&
+      downArrowRect.top < buttonsRect.bottom &&
+      downArrowRect.right > buttonsRect.left &&
+      downArrowRect.left < buttonsRect.right;
+
+    if (!scrolledAllTheWayUp || arrowOverlapsButtons) {
+      hideArrow();
+    } else {
+      showArrow();
+    }
+  };
+
+  toggleArrowVisibility();
+
+  window.addEventListener("scroll", toggleArrowVisibility);
+  window.addEventListener("resize", toggleArrowVisibility);
+  downArrow.addEventListener("animationstart", toggleArrowVisibility);
+  downArrow.addEventListener("animationend", toggleArrowVisibility);
+  downArrow.addEventListener("animationiteration", toggleArrowVisibility);
 });

@@ -250,6 +250,9 @@ figcaption {
 }
 
 #down-arrow {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
   cursor: pointer;
   color: var(--body-text);
 
@@ -261,11 +264,11 @@ figcaption {
 
 @keyframes bounce-down {
   from {
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
 
   to {
-    transform: translateY(20px);
+    transform: translateY(0px);
   }
 }
 
