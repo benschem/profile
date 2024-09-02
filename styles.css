@@ -228,7 +228,9 @@ section:nth-of-type(even) {
   border-radius: 50%;
   background-color: var(--color-medium);
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 figcaption {
