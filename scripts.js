@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const pageIsScrolledAllTheWayUp = () => {
-    return window.scrollY < 40;
+    return window.scrollY === 0;
   };
 
   const downArrow = document.querySelector("#down-arrow");

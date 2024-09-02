@@ -250,9 +250,6 @@ figcaption {
 }
 
 #down-arrow {
-  position: absolute;
-  bottom: 30px;
-  right: 50%;
   cursor: pointer;
   color: var(--body-text);
 
