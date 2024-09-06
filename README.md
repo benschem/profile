@@ -17,3 +17,12 @@ I used [Feather Icons](https://feathericons.com/), a collection of simple, free,
 ## The images
 
 The images are all AI generated using [Bing Image Creator](https://www.bing.com/images/create) and [Adobe Firefly](https://www.adobe.com/au/products/firefly/features/text-to-image.html). I used [Photopea](https://www.photopea.com/) to resize the images and convert them to .webp to make the filesizes as small as possible so they load faster.
+
+## What are all those other files?
+
+- **CNAME** - A Canonical Name record is a type of resource record in the Domain Name System (DNS) that maps one domain name to another. This allows me to use another domain name that I own - [benschem.dev](https://benschem.dev) - instead of the free Github Pages domain name [github.io/benschem/profile](https://github.io/benschem/profile).
+- **.gitignore** - This file tells Git which files and folders to ignore when committing. I've told it to ignore the file `.DS_Store`, which is a macOS file that stores custom attributes of its containing folder, such as folder view options, icon positions, and other visual information. The name is an abbreviation of Desktop Services Store.
+- **robots.txt** - A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
+- **sitemap.xml** - An XML sitemap is a file that tells search engines which URLs on your website should be indexed.
+- **404.html** - This is a custom error page shown when the requested URL could not be found. 404 is a HTTP status code that indicates that the browser was able to communicate with the server, but the server could not find what was requested.
+- **favicon.ico** - This is a small image that is shown in browser tabs and bookmarks.
