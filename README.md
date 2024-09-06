@@ -20,7 +20,7 @@ The images are all AI generated using [Bing Image Creator](https://www.bing.com/
 
 ## What are all those other files?
 
-- **CNAME** - A Canonical Name record is a type of resource record in the Domain Name System (DNS) that maps one domain name to another. This allows me to use another domain name that I own - [benschem.dev](https://benschem.dev) - instead of the free Github Pages domain name [github.io/benschem/profile](https://github.io/benschem/profile).
+- **CNAME** - A Canonical Name record is a type of resource record in the Domain Name System (DNS) that maps one domain name to another. This allows me to use another domain name that I own - [benschem.dev](https://benschem.dev) - instead of the free Github Pages domain name [benschem.github.io/profile](https://benschem.github.io/profile/).
 - **.gitignore** - This file tells Git which files and folders to ignore when committing. I've told it to ignore the file `.DS_Store`, which is a macOS file that stores custom attributes of its containing folder, such as folder view options, icon positions, and other visual information. The name is an abbreviation of Desktop Services Store.
 - **robots.txt** - A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
 - **sitemap.xml** - An XML sitemap is a file that tells search engines which URLs on your website should be indexed.
